@@ -8,5 +8,10 @@
 ?>
 
 <?php if ( !dynamic_sidebar('primary-widget-area') ) : // begin left widget area ?>
-    This is the left sidebar... Should be widgets here! Testar att göra en förändring!
+<li id="archives" class="widget-container">
+        <h3 class="widget-title"><?php _e( 'Archives', 'twentyten' ); ?></h3>
+        <ul>
+                <?php wp_get_archives( 'type=monthly' ); ?>
+        </ul>
+</li>
 <?php endif; // end left widget area ?>
