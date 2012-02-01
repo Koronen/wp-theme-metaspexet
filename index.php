@@ -8,6 +8,6 @@
  */
 get_header(); ?>
 
-            Here goes all the middle stuff
+            <!--Here goes all the middle stuff-->
 
 <?php get_footer(); ?>

@@ -13,10 +13,9 @@
         </aside >
 
     </section>
-    <footer>
-        This is the footer... Here there should be a desk picture!
-    </footer>
   </div> <!--! end of #container -->
+  <footer>
+  </footer>
 
 
   <!-- JavaScript at the bottom for fast page loading -->
