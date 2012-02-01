@@ -280,7 +280,12 @@ h1 {
     float:          left;
     width:          539px;
     height:         1310px;
-    background:     url(./img/bulletinboard_withshadow.png) no-repeat 0 0;
+
+    border: 20px solid orange;
+    border-width:35px 20px 19px 17px;
+    -moz-border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
+    -webkit-border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
+    border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
 }
 
 #main_right {
