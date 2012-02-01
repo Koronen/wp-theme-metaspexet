@@ -1,13 +1,12 @@
-
-            <?php
+<?php
 /**
- * Index Page
+ * Index page.
  *
- * @package WpGuru
- * @subpackage WhiteHeaven
+ * @package Metaspexet
  */
+
 get_header(); ?>
 
-            <!--Here goes all the middle stuff-->
+<!--Here goes all the middle stuff-->
 
 <?php get_footer(); ?>
