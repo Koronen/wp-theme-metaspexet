@@ -1,16 +1,13 @@
-/*
-Theme Name: Metaspexet
-Theme URI: http://www.wordpressguru.se
-Description: When spex is what you want.
-Version: 1.0
-Author: Kristoffer Emanuelsson, Victor Koronen
-Author URI: http://www.wordpressguru.se/
-Tags: light, white, tree-columns, right-sidebar, left-sidebar, fixed-width, threaded-comments
-.
-The CSS, XHTML and design is released under GPL:
-	http://www.opensource.org/licenses/gpl-license.php
-.
-*/
+/**
+ * Theme Name: Metaspexet
+ * Theme URI: http://www.wordpressguru.se
+ * Description: When spex is what you want.
+ * Version: 1.0
+ * Author: Kristoffer Emanuelsson, Victor Koronen
+ * Author URI: http://www.wordpressguru.se/
+ * Tags: light, white, tree-columns, right-sidebar, left-sidebar, fixed-width, threaded-comments
+ * The CSS, XHTML and design is released under GPL: http://www.opensource.org/licenses/gpl-license.php
+ */
 
 /*
  * HTML5 ✰ Boilerplate
@@ -297,12 +294,6 @@ footer {
     height:         1246px;
     margin:         50px 0;
 }
-
-
-
-
-
-
 
 
 
