@@ -237,8 +237,9 @@ td { vertical-align: top; }
 
 /* Basic */
 body {
-    background:     url(./img/bg_tiled1.jpg) repeat 0 0;
+    background:     url("./img/bg_tiled1.jpg") repeat 0 0;
 }
+
 #container {
     width: 1024px;
     margin: 0 auto;
@@ -250,18 +251,21 @@ h1 {
     font-size:      100px;
     margin:         30px 0 10px 0;
 }
+
 #logo_name {
-    background:     url(./img/logo.png) no-repeat 0 0;
+    background:     url("./img/logo.png") no-repeat 0 0;
     width:          352px;
     height:         193px;
     float:          left;
 }
+
 #logo_second {
     color:          #fffc00;
     text-shadow:    2px 2px 0px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     line-height:    193px;
     text-transform: uppercase;
 }
+
 #description {
     text-align:     center;
     font-size:      3em;
@@ -295,9 +299,29 @@ h1 {
 
 /* Footer */
 footer {
-    background:     url(./img/desk.png) no-repeat 50% 50%;
+    background:     url("./img/desk.png") no-repeat 50% 50%;
     height:         1246px;
     margin:         50px 0;
+}
+
+/* Post */
+.post {
+    margin-left: 20px;
+    margin-right: 20px;
+    background: white;
+}
+
+.post h2.page_title {
+    text-align: center;
+}
+
+.post h2.page_title a {
+    color: #000;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
 }
 
 

@@ -7,6 +7,58 @@
 
 get_header(); ?>
 
-<!--Here goes all the middle stuff-->
+<div id="content" class="content">
+<?php if (have_posts()) : ?>
+
+        <?php while (have_posts()) : the_post(); ?>
+
+                <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+                        <div class="post-date">
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to' , 'metaspexet' ) ?> <?php the_title_attribute(); ?>">
+                                <span class="post-month"><?php the_time('M'); ?></span>
+                                <span class="post-day"><?php the_time('j'); ?></span>
+                                <span class="post-year"><?php the_time('Y'); ?></span>
+                                </a>
+                        </div>
+                        <?php edit_post_link( __( 'Edit', 'metaspexet' ), '<div class="edit-post-link">', '</div>') ?>	
+                        <?php if ( has_post_thumbnail() ) { 
+                                echo "<div class='post-thumbnail'>";
+                                        echo "<a href=\"" . get_permalink() . "\">";
+                                        the_post_thumbnail();
+                                        echo "</a>";
+                                echo "</div>";
+                        } ?>
+                        <h2 class="page_title">
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to' , 'metaspexet' ) ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                        </h2>
+                        <small><?php _e( 'by' , 'metaspexet' ); ?> <?php the_author() ?></small>
+                        <div class="entry">
+                                <?php the_content( __( 'Read the rest of this entry' , 'metaspexet' ) . ' &raquo;'); ?>
+                                <?php wp_link_pages(array('before' => '<p class="clear">' . __( 'Pages:' , 'metaspexet' ) . ' ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+
+                                <p class="postmetadata clear">
+                                        <?php _e( 'Categories:' , 'metaspexet' ) ?> <?php the_category(', ') ?> | 
+                                        <?php comments_popup_link( __( 'No Comments' , 'metaspexet' ) . ' &#187;', '1 ' . __( 'Comment' , 'metaspexet' ) . ' &#187;', '% ' . __( 'Comments' , 'metaspexet' ) . ' &#187;'); ?>
+                                </p>
+                        
+                        </div>
+                </div>
+                <hr class="divider" />
+    
+                <?php endwhile; ?>
+
+        <div class="navigation">
+                <div class="alignleft"><?php next_posts_link('&laquo;' . __( 'Older Entries' , 'metaspexet' ) ) ?></div>
+                <div class="alignright"><?php previous_posts_link( __( 'Newer Entries' , 'metaspexet' ) . ' &raquo;') ?></div>
+        </div>
+
+<?php else : ?>
+
+        <h2 class="page_title"><?php _e( 'Not Found' , 'metaspexet' ) ?></h2>
+        <p><?php _e( 'Sorry, no posts matched your criteria.', 'metaspexet' ) ?></p>
+        <?php get_search_form(); ?>
+
+<?php endif; ?>
+</div>
 
 <?php get_footer(); ?>
