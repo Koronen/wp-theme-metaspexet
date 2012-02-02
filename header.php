@@ -63,12 +63,6 @@
 <body>
 
   <div id="container">
-    <header>
-        <hgroup>
-            <h1><span id="logo_name" class="ir">MetaSpexet</span> - <span id="logo_second">Premiär</span></h1>
-            <h2 id="description"><?php bloginfo("description"); ?></h2>
-        </hgroup>
-    </header>
     <section id="main" role="main" class="clearfix">
         <aside  id="main_left">
             <?php get_sidebar('left'); ?>

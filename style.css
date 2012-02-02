@@ -243,35 +243,8 @@ body {
 #container {
     width: 1024px;
     margin: 0 auto;
+    margin-top: 20px;
 }
-
-/* Header */
-h1 {
-    font-family:    BebasRegular, sans-serif;
-    font-size:      100px;
-    margin:         30px 0 10px 0;
-}
-
-#logo_name {
-    background:     url("./img/logo.png") no-repeat 0 0;
-    width:          352px;
-    height:         193px;
-    float:          left;
-}
-
-#logo_second {
-    color:          #fffc00;
-    text-shadow:    2px 2px 0px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
-    line-height:    193px;
-    text-transform: uppercase;
-}
-
-#description {
-    text-align:     center;
-    font-size:      3em;
-    margin-top:     10px;
-}
-
 
 /* Main */
 
