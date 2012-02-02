@@ -222,9 +222,28 @@ td { vertical-align: top; }
    Author: Kristoffer Emanuelsson, Victor Koronen
    ========================================================================== */
 
+/* Fonts */
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('./fonts/bebasneue-webfont.eot');
+    src: url('./fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/bebasneue-webfont.woff') format('woff'),
+         url('./fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('./fonts/bebasneue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* Basic */
 body {
     background:     url("./img/bg_tiled1.jpg") repeat 0 0;
+}
+h1, h2, h3, h4, h5, h6 {
+        font-family: BebasNeueRegular;
+        font-weight: normal;
+        font-style: normal;
 }
 
 #container {
@@ -335,12 +354,12 @@ a {
 #latest_news_list {
     list-style: none;
     text-transform: uppercase;
-    font-weight: bold;
     padding-left: 15px;
-    font-size: 1.2em;
+    font-size: 1.7em;
 }
 #latest_news_list a{
     text-decoration: none;
+    font-family: BebasNeueRegular;
 }
 
 
