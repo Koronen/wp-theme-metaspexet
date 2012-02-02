@@ -296,6 +296,7 @@ a {
     background: url("./img/tidningar_small.png") no-repeat 0 0;
     width: 184px;
     height: 410px;
+    margin-bottom: 40px;
 }
 #nav_ul {
 
@@ -323,6 +324,23 @@ a {
     height: 58px;
     display: block;
     margin: 61px 0 0 10px;
+}
+
+#latest_news {
+    background: url("./img/senastenytt.png") no-repeat 0 0;
+    width: 194px;
+    height: 264px;
+    padding-top: 70px;
+}
+#latest_news_list {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 1.2em;
+}
+#latest_news_list a{
+    text-decoration: none;
 }
 
 
