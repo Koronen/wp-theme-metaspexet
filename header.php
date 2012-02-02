@@ -4,7 +4,6 @@
  * Header Page
  *
  * @package MetaSpexet
- * @subpackage MetaSpexet
  */
 
 ?><!doctype html>
@@ -61,7 +60,16 @@
 </head>
 
 <body>
-
+    <header id="header">
+        <hgroup>
+            <h1 id="title"><div id="logo" class="ir">MetaSpexet</div> Premiär</h1>
+            <h2 id="or_statement">eller en fyndig och bra undertitel</h2>
+        </hgroup>
+        <aside id="sponsor">
+            <p>I samarbete med</p>
+            <img src="<?php bloginfo('template_directory'); ?>/img/af.png" title="Samarbetspartner ÅF" alt="Samarbetspartner ÅF" />
+        </aside>
+    </header>
 <section id="container" role="main" class="clearfix">
     <aside  id="main_left">
         <?php get_sidebar('left'); ?>

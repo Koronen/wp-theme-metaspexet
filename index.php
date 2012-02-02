@@ -29,7 +29,9 @@ get_header(); ?>
                                 echo "</div>";
                         } ?>
                         <h1 class="page_title">
-                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to' , 'metaspexet' ) ?> <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+<!--                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to' , 'metaspexet' ) ?> <?php the_title_attribute(); ?>">-->
+                                    <?php the_title(); ?>
+<!--                                </a>-->
                         </h1>
 <!--                        <small><?php _e( 'by' , 'metaspexet' ); ?> <?php the_author() ?></small>-->
                         <div class="entry">

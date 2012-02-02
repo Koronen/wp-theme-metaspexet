@@ -3,7 +3,6 @@
  * Footer Page
  *
  * @package MetaSpexet
- * @subpackage MetaSpexet
  */
 
 ?>

@@ -3,7 +3,6 @@
  * Right Sidebar Page
  *
  * @package MetaSpexet
- * @subpackage MetaSpexet
  */
 ?>
 <ul id="widget-area-right" class="widget-area">
@@ -12,7 +11,7 @@
             <nav>
                 <ul id="biljetter_ul">
                     <li>
-                        <a id="kop_biljetter" href="/kop_biljetter/" title="Köp Biljetter"></a>
+                        <a id="kop_biljetter" href="#" title="Köp Biljetter"></a>
                     </li>
                 </ul>
             </nav>
