@@ -8,7 +8,7 @@
 
 // Set the content width based on the Theme CSS
 if ( ! isset( $content_width ) )
-	$content_width = 539;
+	$content_width = 422;
 
 
 // This theme needs post thumbnails

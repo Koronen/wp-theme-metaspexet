@@ -67,7 +67,7 @@
         </hgroup>
         <aside id="sponsor">
             <p>I samarbete med</p>
-            <img src="<?php bloginfo('template_directory'); ?>/img/af.png" title="Samarbetspartner ÅF" alt="Samarbetspartner ÅF" />
+            <a href="http://af.se" title="ÅF" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/af.png" title="Samarbetspartner ÅF" alt="Samarbetspartner ÅF" /></a>
         </aside>
     </header>
 <section id="container" role="main" class="clearfix">

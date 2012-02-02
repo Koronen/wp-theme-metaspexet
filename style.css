@@ -316,26 +316,19 @@ h1, h2, h3, h4, h5, h6 {
     width:          369px;
 }
 
-/* Footer */
-footer {
-    background:     url("./img/desk.png") no-repeat 50% 50%;
-    height:         1246px;
-    margin:         50px 0;
-}
-
 /* Post */
 .post {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 20px;
     background: white;
     padding: 20px;
 }
 
 .page_title {
     text-align: center;
-    margin-top: 0;
+    margin: 0;
     color: #000;
-    font-size: 2em;
+    font-size: 4em;
+    line-height: 1em;
 }
 
 .page_title a {
@@ -406,9 +399,15 @@ footer {
 #latest_news_list {
     list-style: none;
     text-transform: uppercase;
-    padding-left: 15px;
-    font-size: 1.7em;
+    padding: 0 15px;
+    font-size: 1.4em;
+    text-align: justify;
+    line-height: 1em;
 }
+#latest_news_list li{
+    margin-bottom: 15px;
+}
+
 #latest_news_list a{
     text-decoration: none;
     font-family: BebasNeueRegular;
@@ -432,6 +431,13 @@ footer {
 }
 #tv_books {
     margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background:     url("./img/desk.png") no-repeat 50% 50%;
+    height:         1246px;
+    margin:         50px 0;
 }
 
 
