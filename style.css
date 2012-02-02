@@ -219,21 +219,8 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Kristoffer Emanuelsson, Victor Koronen
    ========================================================================== */
-
-/* Fontfaces */
-@font-face {
-    font-family: 'BebasRegular';
-    src: url('bebas-webfont.eot');
-    src: url('bebas-webfont.eot?#iefix') format('embedded-opentype'),
-         url('bebas-webfont.woff') format('woff'),
-         url('bebas-webfont.ttf') format('truetype'),
-         url('bebas-webfont.svg#') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 /* Basic */
 body {
@@ -243,7 +230,7 @@ body {
 #container {
     width: 1024px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* Main */
@@ -255,7 +242,7 @@ body {
 
 #main_middle {
     float:          left;
-    width:          539px;
+    width:          502px;
     height:         1310px;
 
     border: 20px solid orange;
@@ -295,6 +282,47 @@ footer {
 
 a {
     color: #000;
+}
+
+/* Sidebar */
+
+.widget-area {
+    padding-left: 0;
+    list-style: none;
+}
+/* Sidebar Left */
+
+#magazines {
+    background: url("./img/tidningar_small.png") no-repeat 0 0;
+    width: 184px;
+    height: 410px;
+}
+#nav_ul {
+
+}
+#aktuellt {
+    width: 165px;
+    height: 50px;
+    display: block;
+    margin: 0 0 0 10px;
+}
+#tack_till {
+    width: 165px;
+    height: 58px;
+    display: block;
+    margin: 39px 0 5px 10px;
+}
+#om_oss {
+    width: 165px;
+    height: 58px;
+    display: block;
+    margin: 39px 0 0 10px;
+}
+#spexet {
+    width: 154px;
+    height: 58px;
+    display: block;
+    margin: 61px 0 0 10px;
 }
 
 

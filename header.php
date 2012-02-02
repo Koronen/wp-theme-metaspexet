@@ -62,9 +62,8 @@
 
 <body>
 
-  <div id="container">
-    <section id="main" role="main" class="clearfix">
-        <aside  id="main_left">
-            <?php get_sidebar('left'); ?>
-        </aside >
-        <div id="main_middle">
+<section id="container" role="main" class="clearfix">
+    <aside  id="main_left">
+        <?php get_sidebar('left'); ?>
+    </aside >
+    <div id="main_middle">

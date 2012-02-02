@@ -7,13 +7,12 @@
  */
 
 ?>
-        </div>
-        <aside  id="main_right">
-            <?php get_sidebar('right'); ?>
-        </aside >
+    </div>
+    <aside  id="main_right">
+        <?php get_sidebar('right'); ?>
+    </aside >
 
-    </section>
-  </div> <!--! end of #container -->
+</section>
   <footer>
   </footer>
 
