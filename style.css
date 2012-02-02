@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #container {
-    width: 1024px;
+    width: 1115px;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -262,7 +262,8 @@ h1, h2, h3, h4, h5, h6 {
 #main_middle {
     float:          left;
     width:          502px;
-    height:         1310px;
+    min-height:     1200px;
+    margin-bottom:  140px;
 
     border: 20px solid orange;
     border-width:35px 20px 19px 17px;
@@ -273,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #main_right {
     float:          right;
-    width:          278px;
+    width:          369px;
 }
 
 /* Footer */
@@ -288,29 +289,36 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
     background: white;
+    padding: 20px;
 }
 
-.post h2.page_title {
+.page_title {
     text-align: center;
+    margin-top: 0;
 }
 
-.post h2.page_title a {
+.page_title a {
     color: #000;
     text-decoration: none;
+    font-size: 2em;
 }
 
 a {
     color: #000;
 }
 
-/* Sidebar */
+.entry p {
+    font-family: Georgia;
+    font-size: 0.9em;
+}
 
+/* Sidebar */
 .widget-area {
     padding-left: 0;
     list-style: none;
 }
-/* Sidebar Left */
 
+/* Sidebar Left */
 #magazines {
     background: url("./img/tidningar_small.png") no-repeat 0 0;
     width: 184px;
@@ -360,6 +368,26 @@ a {
 #latest_news_list a{
     text-decoration: none;
     font-family: BebasNeueRegular;
+}
+
+/* Sidebar Right */
+
+#biljetter {
+    width: 212px;
+    height: 145px;
+    margin-bottom: 30px;
+    position: relative;
+}
+#biljetter_ul {
+    width: 212px;
+    height: 145px;
+    background: url("./img/biljetter.png") no-repeat 0 0;
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+#tv_books {
+    margin-bottom: 30px;
 }
 
 
