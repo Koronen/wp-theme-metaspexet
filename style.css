@@ -309,20 +309,19 @@ h1, h2, h3, h4, h5, h6 {
 
 #main_middle {
     float:          left;
-    width:          502px;
-    min-height:     1200px;
+    width:          539px;
+    height:         1310px;
     margin-bottom:  140px;
-
-    border: 20px solid orange;
-    border-width:35px 20px 19px 17px;
-    -moz-border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
-    -webkit-border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
-    border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
+    background:     url(./img/bulletinboard_withshadow.png) no-repeat 0 0;
 }
 
 #main_right {
     float:          right;
     width:          369px;
+}
+
+#content {
+    padding: 22px 36px 0px 20px;
 }
 
 /* Post */
