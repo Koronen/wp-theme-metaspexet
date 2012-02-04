@@ -232,9 +232,18 @@ td { vertical-align: top; }
          url('./fonts/bebasneue-webfont.svg#BebasNeueRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
+@font-face {
+    font-family: 'OldNewspaperTypes';
+    src: url('./fonts/oldnewspapertypes-webfont.eot');
+    src: url('./fonts/oldnewspapertypes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/oldnewspapertypes-webfont.woff') format('woff'),
+         url('./fonts/oldnewspapertypes-webfont.ttf') format('truetype'),
+         url('./fonts/oldnewspapertypes-webfont.svg#OldNewspaperTypes') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Basic */
 body {
@@ -337,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .entry p {
-    font-family: Georgia;
+    font-family: OldNewspaperTypes, Georgia;
 }
 
 /* Sidebar */
