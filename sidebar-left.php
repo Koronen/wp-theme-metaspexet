@@ -14,13 +14,13 @@
                         <a id="aktuellt" href="/" title="Aktuellt"></a>
                     </li>
                     <li>
-                        <a id="tack_till" href="#" title="Tack Till"></a>
+                        <a id="tack_till" href="/tack_till" title="Tack Till"></a>
                     </li>
                     <li>
-                        <a id="om_oss" href="#" title="Om Oss"></a>
+                        <a id="om_oss" href="/om_oss" title="Om Oss"></a>
                     </li>
                     <li>
-                        <a id="spexet" href="#" title="Spexet"></a>
+                        <a id="spexet" href="/om_spexet" title="Spexet"></a>
                     </li>
                 </ul>
             </nav>
