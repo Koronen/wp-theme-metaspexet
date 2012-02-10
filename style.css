@@ -249,10 +249,11 @@ td { vertical-align: top; }
 body {
     background:     url("./img/bg_tiled1.jpg") repeat 0 0;
 }
+
 h1, h2, h3, h4, h5, h6 {
-        font-family: BebasNeueRegular;
-        font-weight: normal;
-        font-style: normal;
+    font-family:    BebasNeueRegular;
+    font-weight:    normal;
+    font-style:     normal;
 }
 
 #container {
@@ -266,6 +267,7 @@ h1, h2, h3, h4, h5, h6 {
     margin:         0 auto;
     position:       relative;
 }
+
 #title {
     line-height:    103px;
     font-size:      130px;
@@ -273,6 +275,7 @@ h1, h2, h3, h4, h5, h6 {
     margin:         30px 0 10px 0;
     text-shadow:    3px 3px 0px #000;
 }
+
 #logo {
     background:     url("./img/logo.png") repeat 0 0;
     width:          188px;
@@ -280,6 +283,7 @@ h1, h2, h3, h4, h5, h6 {
     float:          left;
     margin:         0 30px 0 0px;
 }
+
 #or_statement {
     font-size:      50px;
     font-family:    serif;
@@ -295,7 +299,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight:    bold;
     font-size: 1.2em;
 }
-#sponsor p{
+
+#sponsor p {
     margin: 0 0 5px 0;
 }
 
@@ -353,11 +358,13 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0;
     list-style: none;
 }
+
 .widget-area a,
 .widget-area a:visited
 {
     color: #000;
 }
+
 .widget-area a:hover {
     color: #06e;
 }
@@ -369,27 +376,28 @@ h1, h2, h3, h4, h5, h6 {
     height: 410px;
     margin-bottom: 40px;
 }
-#nav_ul {
 
-}
 #aktuellt {
     width: 165px;
     height: 50px;
     display: block;
     margin: 0 0 0 10px;
 }
+
 #tack_till {
     width: 165px;
     height: 58px;
     display: block;
     margin: 39px 0 5px 10px;
 }
+
 #om_oss {
     width: 165px;
     height: 58px;
     display: block;
     margin: 39px 0 0 10px;
 }
+
 #spexet {
     width: 154px;
     height: 58px;
@@ -403,6 +411,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 264px;
     padding-top: 70px;
 }
+
 #latest_news_list {
     list-style: none;
     text-transform: uppercase;
@@ -411,11 +420,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: justify;
     line-height: 1em;
 }
-#latest_news_list li{
+
+#latest_news_list li {
     margin-bottom: 15px;
 }
 
-#latest_news_list a{
+#latest_news_list a {
     text-decoration: none;
     font-family: BebasNeueRegular;
 }
@@ -428,6 +438,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
     position: relative;
 }
+
 #kop_biljetter {
     width: 212px;
     height: 145px;
@@ -436,6 +447,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -40px;
     top: 0;
 }
+
 #tv_books {
     margin-bottom: 30px;
 }
