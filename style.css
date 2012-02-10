@@ -494,14 +494,14 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
+@media only screen and (min-width: 1115px) {
+  #container {
+      width: 1290px;
+  }
 
-}
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
+  #main_left {
+      margin-left: 175px;
+  }
 }
 
 
