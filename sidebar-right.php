@@ -22,9 +22,14 @@
             <img src="<?php bloginfo('template_directory'); ?>/img/tv_bocker.png" alt="Tv och Böcker" title="Tv och Böcker" />
         </div>
     </li>
-    <li id="poster" class="widget-container widget_text">
+    <li id="poster1" class="widget-container widget_text poster">
         <div class="textwidget">
-            <img src="<?php bloginfo('template_directory'); ?>/img/poster.png" alt="Se så det gnistrar" title="Se så det gnistrar" />
+            <img src="<?php bloginfo('template_directory'); ?>/img/right_poster1.png" alt="Se så det gnistrar" title="Se så det gnistrar" />
+        </div>
+    </li>
+    <li id="poster2" class="widget-container widget_text poster">
+        <div class="textwidget">
+            <img src="<?php bloginfo('template_directory'); ?>/img/right_poster2.png" alt="O-oh-h DAD! ...It's a SCHWINN!" title="O-oh-h DAD! ...It's a SCHWINN!" />
         </div>
     </li>
     <?php if ( !dynamic_sidebar('right-widget-area') ) : // begin right widget area ?>
