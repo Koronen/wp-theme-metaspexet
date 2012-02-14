@@ -7,6 +7,9 @@
 
 ?>
         </div>
+        <div id="bulletin_right"></div>
+        <div class="clearfix"></div>
+        <div id="bulletin_bottom"></div>
     </div>
     <aside  id="main_right">
         <?php get_sidebar('right'); ?>

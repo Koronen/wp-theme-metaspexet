@@ -73,4 +73,6 @@
         <?php get_sidebar('left'); ?>
     </aside >
     <div id="main_middle">
+        <div id="bulletin_top"></div>
+        <div id="bulletin_left"></div>
         <div id="main_container">

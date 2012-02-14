@@ -301,36 +301,34 @@ h1, h2, h3, h4, h5, h6 {
 #container {
     width:          1115px;
     margin:         0 auto;
-    margin-top:     30px;
 }
 
 /* Header */
 #header {
-    width:          840px;
-    height:         130px;
+    width:          960px;
+    height:         154px;
     margin:         0 auto;
-    margin-top:     30px;
-    background:     url("./img/header.png") no-repeat;
+    background:     url("./img/header.jpg") no-repeat;
 }
 
 #logo {
-    width:          188px;
+    margin:         27px 0 0 63px;
+    width:          176px;
     height:         103px;
     float:          left;
-    margin:         10px 0 0 10px;
 }
 
 #sponsor {
     width:          100px;
     height:         100px;
     float:          right;
-    margin:         10px 10px 0 0;
+    margin:         26px 82px 0 0;
 }
 
 #header aside a {
-    display: block;
-    width: 100%;
-    height: 100%;
+    display:        block;
+    width:          100%;
+    height:         100%;
 }
 
 /* Main */
@@ -342,16 +340,37 @@ h1, h2, h3, h4, h5, h6 {
 
 #main_middle {
     float:          left;
-    width:          484px;
-    height:         1258px;
+    width:          539px;
+    height:         1256px;
     margin-bottom:  65px;
-    background:     url("./img/bulletinboard_withshadow.png") repeat 0 0;
-    padding:        22px 23px 19px 20px;
 
+}
+#bulletin_top {
+    background:     url("./img/content_top.jpg") repeat 0 0;
+    height:         33px;
+}
+#bulletin_bottom {
+    background:     url("./img/content_bottom.jpg") repeat 0 0;
+    height:         33px;
+}
+#bulletin_left {
+    background:     url("./img/content_left.jpg") repeat 0 0;
+    width:          22px;
+    float:          left;
+    height:         1256px;
+}
+#bulletin_right {
+    background:     url("./img/content_right.jpg") repeat 0 0;
+    width:          22px;
+    float:          left;
+    height:         1256px;
 }
 #main_container {
     overflow:       hidden;
     height:         1258px;
+    float:          left;
+    height:         1256px;
+    width:          485px
 }
 
 #main_right {
@@ -369,6 +388,8 @@ h1, h2, h3, h4, h5, h6 {
     -moz-user-select:       none;
     -webkit-user-select:    none;
     user-select:            none;
+    background:             url("./img/content_bg_dynamic.jpg") 0 0;
+    padding:                10px 0;
 }
 
 .post {
@@ -398,6 +419,7 @@ h1, h2, h3, h4, h5, h6 {
 .widget-area {
     padding-left:   0;
     list-style:     none;
+    margin-top:     0;
 }
 
 .widget-area a,
@@ -412,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sidebar Left */
 #magazines {
-    background:     url("./img/tidningar_small.png") no-repeat 0 0;
+    background:     url("./img/left_menu.jpg") no-repeat 0 0;
     width:          184px;
     height:         410px;
     margin-bottom:  40px;
@@ -447,7 +469,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #latest_news {
-    background:     url("./img/senastenytt.png") no-repeat 0 0;
+    background:     url("./img/left_latest.jpg") no-repeat 0 0;
     width:          194px;
     height:         264px;
     padding-top:    70px;
@@ -484,7 +506,7 @@ h1, h2, h3, h4, h5, h6 {
 #kop_biljetter {
     width:          212px;
     height:         145px;
-    background:     url("./img/biljetter.png") no-repeat 0 0;
+/*    background:     url("./img/biljetter.png") no-repeat 0 0;*/
     position:       absolute;
     left:           -40px;
     top:            0;
