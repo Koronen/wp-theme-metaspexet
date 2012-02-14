@@ -420,6 +420,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left:   0;
     list-style:     none;
     margin-top:     0;
+    margin-bottom:     0;
 }
 
 .widget-area a,
@@ -431,11 +432,16 @@ h1, h2, h3, h4, h5, h6 {
 .widget-area a:hover {
     color:          #06e;
 }
+#widget-area-left {
+    width:          194px;
+}
+#widget-area-right {
+    width:          227px;
+}
 
 /* Sidebar Left */
 #magazines {
     background:     url("./img/left_menu.jpg") no-repeat 0 0;
-    width:          184px;
     height:         410px;
     margin-bottom:  40px;
 }
@@ -513,7 +519,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #tv_books {
-    margin-bottom:  30px;
 }
 
 /* Footer */
@@ -559,11 +564,11 @@ footer {
 
 @media only screen and (min-width: 1115px) {
   #container {
-      width: 1290px;
+      width: 1245px;
   }
 
   #main_left {
-      margin-left: 175px;
+      margin-left: 143px;
   }
 }
 
