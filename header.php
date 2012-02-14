@@ -60,14 +60,12 @@
 </head>
 
 <body>
-    <header id="header">
-        <hgroup>
-            <h1 id="title"><div id="logo" class="ir">MetaSpexet</div> Premiär</h1>
-            <h2 id="or_statement">eller en fyndig och bra undertitel</h2>
-        </hgroup>
+    <header id="header" class="clearfix">
+        <aside id="logo">
+            <a href="/" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name'); ?>"></a>
+        </aside>
         <aside id="sponsor">
-            <p>I samarbete med</p>
-            <a href="http://af.se" title="ÅF" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/af.png" title="Samarbetspartner ÅF" alt="Samarbetspartner ÅF" /></a>
+            <a href="http://af.se" title="Samarbetspartner ÅF" alt="Samarbetspartner ÅF" target="_blank"></a>
         </aside>
     </header>
 <section id="container" role="main" class="clearfix">
