@@ -241,17 +241,60 @@ body {
     background:     url("./img/bg_tiled1.jpg") repeat 0 0;
 }
 h1, h2, h3, h4, h5, h6 {
-        font-family: BebasNeueRegular;
-        font-weight: normal;
-        font-style: normal;
+    font-family:    BebasNeueRegular;
+    font-weight:    normal;
+    font-style:     normal;
 }
 
+/* Image stuff */
+.aligncenter {
+  display:          block;
+  margin-left:      auto;
+  margin-right:     auto;
+}
+
+.alignleft {
+  float:            left;
+  margin-right:     10px;
+}
+
+.alignright {
+  float:            right;
+  margin-left:      10px;
+}
+
+.wp-caption {
+  border:           1px solid #ddd;
+  text-align:       center;
+  background-color: #f3f3f3;
+  padding-top:      4px;
+  margin:           10px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius:    3px;
+}
+
+.wp-caption img {
+  margin:           0;
+  padding:          0;
+  border:           0 none;
+}
+
+.wp-caption-dd {
+  font-size:        11px;
+  line-height:      17px;
+  padding:          0 4px 5px;
+  margin:           0;
+}
+
+/* Main */
 #container {
     width:          1115px;
     margin:         0 auto;
     margin-top:     30px;
 }
 
+/* Header */
 #header {
     width:          900px;
     margin:         0 auto;
@@ -284,10 +327,10 @@ h1, h2, h3, h4, h5, h6 {
     right:          0;
     font-family:    Georgia;
     font-weight:    bold;
-    font-size: 1.2em;
+    font-size:      1.2em;
 }
 #sponsor p{
-    margin: 0 0 5px 0;
+    margin:         0 0 5px 0;
 }
 
 
@@ -300,15 +343,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #main_middle {
     float:          left;
-    width:          502px;
-    min-height:     1200px;
+    width:          539px;
+    height:         1310px;
     margin-bottom:  140px;
+    overflow:       hidden;
+    background:     url("./img/bulletinboard_withshadow.png") repeat 0 0;
 
-    border: 20px solid orange;
-    border-width:35px 20px 19px 17px;
-    -moz-border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
-    -webkit-border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
-    border-image: url("./img/bulletinboard.png") 35 20 19 17 repeat;
 }
 
 #main_right {
@@ -317,119 +357,132 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Post */
+
+#content{
+    cursor:                 move;
+    top:                    0;
+    left:                   0;
+    position:               relative;
+    -ms-user-select:        none;
+    -moz-user-select:       none;
+    -webkit-user-select:    none;
+    user-select:            none;
+    margin:                 22px 35px 31px 21px;
+}
+
 .post {
-    margin: 0 20px 20px;
-    background: white;
-    padding: 20px;
+/*    margin:         0 20px 20px;*/
+    background:     white;
+/*    padding:        20px;*/
 }
 
 .page_title {
-    text-align: center;
-    margin: 0;
-    color: #000;
-    font-size: 4em;
-    line-height: 1em;
+    text-align:     center;
+    margin:         0;
+    color:          #000;
+    font-size:      4em;
+    line-height:    1em;
 }
 
 .page_title a {
     text-decoration: none;
-    color: #000;
+    color:          #000;
 }
 
 .entry p {
-    font-family: Georgia;
+    font-family:    Georgia;
 }
 
 /* Sidebar */
 .widget-area {
-    padding-left: 0;
-    list-style: none;
+    padding-left:   0;
+    list-style:     none;
 }
 .widget-area a,
 .widget-area a:visited
 {
-    color: #000;
+    color:          #000;
 }
 .widget-area a:hover {
-    color: #06e;
+    color:          #06e;
 }
 
 /* Sidebar Left */
 #magazines {
-    background: url("./img/tidningar_small.png") no-repeat 0 0;
-    width: 184px;
-    height: 410px;
-    margin-bottom: 40px;
+    background:     url("./img/tidningar_small.png") no-repeat 0 0;
+    width:          184px;
+    height:         410px;
+    margin-bottom:  40px;
 }
 #nav_ul {
 
 }
 #aktuellt {
-    width: 165px;
-    height: 50px;
-    display: block;
-    margin: 0 0 0 10px;
+    width:          165px;
+    height:         50px;
+    display:        block;
+    margin:         0 0 0 10px;
 }
 #tack_till {
-    width: 165px;
-    height: 58px;
-    display: block;
-    margin: 39px 0 5px 10px;
+    width:          165px;
+    height:         58px;
+    display:        block;
+    margin:         39px 0 5px 10px;
 }
 #om_oss {
-    width: 165px;
-    height: 58px;
-    display: block;
-    margin: 39px 0 0 10px;
+    width:          165px;
+    height:         58px;
+    display:        block;
+    margin:         39px 0 0 10px;
 }
 #spexet {
-    width: 154px;
-    height: 58px;
-    display: block;
-    margin: 61px 0 0 10px;
+    width:          154px;
+    height:         58px;
+    display:        block;
+    margin:         61px 0 0 10px;
 }
 
 #latest_news {
-    background: url("./img/senastenytt.png") no-repeat 0 0;
-    width: 194px;
-    height: 264px;
-    padding-top: 70px;
+    background:     url("./img/senastenytt.png") no-repeat 0 0;
+    width:          194px;
+    height:         264px;
+    padding-top:    70px;
 }
 #latest_news_list {
-    list-style: none;
+    list-style:     none;
     text-transform: uppercase;
-    padding: 0 15px;
-    font-size: 1.4em;
-    text-align: justify;
-    line-height: 1em;
+    padding:        0 15px;
+    font-size:      1.4em;
+    text-align:     justify;
+    line-height:    1em;
 }
 #latest_news_list li{
-    margin-bottom: 15px;
+    margin-bottom:  15px;
 }
 
 #latest_news_list a{
     text-decoration: none;
-    font-family: BebasNeueRegular;
+    font-family:    BebasNeueRegular;
 }
 
 /* Sidebar Right */
 
 #biljetter {
-    width: 212px;
-    height: 145px;
-    margin-bottom: 30px;
-    position: relative;
+    width:          212px;
+    height:         145px;
+    margin-bottom:  30px;
+    position:       relative;
 }
 #kop_biljetter {
-    width: 212px;
-    height: 145px;
-    background: url("./img/biljetter.png") no-repeat 0 0;
-    position: absolute;
-    left: -40px;
-    top: 0;
+    width:          212px;
+    height:         145px;
+    background:     url("./img/biljetter.png") no-repeat 0 0;
+    position:       absolute;
+    left:           -40px;
+    top:            0;
 }
 #tv_books {
-    margin-bottom: 30px;
+    margin-bottom:  30px;
 }
 
 /* Footer */
