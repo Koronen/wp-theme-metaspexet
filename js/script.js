@@ -24,7 +24,10 @@ $(function(){
                 $this.css({top: newTop});
             }
         });
-       $(window).mouseup( function(){
+       $("iframe").bind( "mouseup mouseleave", function(){
+            $("#content").data("mouseDown", false);
+       });
+       $(window).bind( "mouseup mouseleave", function(){
             $("#content").data("mouseDown", false);
        });
     });
