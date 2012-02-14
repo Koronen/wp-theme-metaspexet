@@ -12,6 +12,8 @@ get_header(); ?>
 
         <?php while (have_posts()) : the_post(); ?>
 
+    <div class="post_container">
+                <div class="post_top"></div>
                 <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 <!--                        <div class="post-date">
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to' , 'metaspexet' ) ?> <?php the_title_attribute(); ?>">
@@ -45,6 +47,8 @@ get_header(); ?>
 
                         </div>
                 </article>
+                <div class="post_bottom"></div>
+    </div>
 
                 <?php endwhile; ?>
 

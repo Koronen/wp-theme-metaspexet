@@ -366,6 +366,7 @@ h1, h2, h3, h4, h5, h6 {
     height:         1256px;
 }
 #main_container {
+    background:             url("./img/content_bg_dynamic.jpg") 0 0;
     overflow:       hidden;
     height:         1258px;
     float:          left;
@@ -391,11 +392,29 @@ h1, h2, h3, h4, h5, h6 {
     background:             url("./img/content_bg_dynamic.jpg") 0 0;
     padding:                10px 0;
 }
+.post_container {
+    position: relative;
+}
 
 .post {
-    margin: 10px 20px 10px 20px;
-    background: white;
-    padding: 20px;
+    margin: 0 18px;
+    padding: 0 20px;
+    background:             #fff;
+}
+.post_top{
+    width:                  464px;
+    height:                 47px;
+    background:             url("./img/post_top.png") no-repeat 0 0;
+    margin-top:             10px;
+    margin-left:            10px;
+}
+.post_bottom{
+    width:                  464px;
+    height:                 106px;
+    background:             url("./img/post_bottom.png") no-repeat 50% 100%;
+    margin-bottom:          10px;
+    margin-left:            11px;
+    margin-top:             -58px;
 }
 
 .page_title {
