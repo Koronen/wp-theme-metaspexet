@@ -6,6 +6,7 @@
  */
 
 ?>
+        </div>
     </div>
     <aside  id="main_right">
         <?php get_sidebar('right'); ?>

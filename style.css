@@ -247,7 +247,7 @@ td { vertical-align: top; }
 
 /* Basic */
 body {
-    background:     url("./img/bg_tiled1_long.jpg") repeat-x 0 0;
+    background:     url("./img/bg_tiled1_long.jpg") repeat-x 50% 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -342,25 +342,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #main_middle {
     float:          left;
-    width:          539px;
-    height:         1310px;
-    margin-bottom:  140px;
-    overflow:       hidden;
+    width:          484px;
+    height:         1258px;
+    margin-bottom:  65px;
     background:     url("./img/bulletinboard_withshadow.png") repeat 0 0;
+    padding:        22px 23px 19px 20px;
 
+}
+#main_container {
+    overflow:       hidden;
+    height:         1258px;
 }
 
 #main_right {
     float:          right;
     width:          369px;
 }
-
-#content {
-    margin: 22px 36px 0px 20px;
-    height: 100%;
-    overflow: hidden;
-}
-
 /* Post */
 
 #content{
@@ -372,7 +369,6 @@ h1, h2, h3, h4, h5, h6 {
     -moz-user-select:       none;
     -webkit-user-select:    none;
     user-select:            none;
-    margin:                 22px 35px 31px 21px;
 }
 
 .post {

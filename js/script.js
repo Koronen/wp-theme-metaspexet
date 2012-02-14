@@ -9,25 +9,19 @@ $(function(){
                 //Sidebar Offset, Top value
                 var s_top = parseInt($this.position().top);
 
-                //I used this coordinate and offset values for debuggin
-                console.log("S_Top : " + s_top + " | Cursor Start : " + $this.data("cursorY") + " | Page : " + e.pageY + " | Client " + e.clientY + " | Layer " + e.layerY);
-                console.log(Math.round(($this.data("cursorY") - e.pageY)));
+                var mouseMoved =  $this.data("cursorY") - e.pageY;
 
-                //Calculate the top value
-                //This equation is not the perfect, but it 's very close
-                console.log("Height : " + $this.height());
-                var contentOff = ($this.height() - 1310);
-                var top_value = Math.round( (s_top - ($this.data("cursorY") - e.pageY) ) );
-                console.log("Top Value : " + top_value);
-                console.log("ContentOff : " + contentOff + " | Max : " + (0 - contentOff) + " | Min : " + contentOff);
-                top_value = Math.max( top_value, 0 - contentOff );
-                console.log("Top Value : " + top_value);
-                top_value = Math.min( top_value, contentOff );
-                console.log("Top Value : " + top_value);
                 $this.data("cursorY", e.pageY);
+                var top = $this.css("top");
+                top = top.substr(0, top.length-2);
+                var newTop = (Math.round(top) - mouseMoved);
 
-                //Animate the #menu by chaging the top value
-                $this.css({top: top_value});
+//                //Calculate the top value
+//                //This equation is not the perfect, but it 's very close
+                var maxToMove = ($this.height()-$("#main_container").height()+20);
+                newTop = Math.max(newTop, 0-maxToMove);
+                newTop = Math.min(newTop, 0);;
+                $this.css({top: newTop});
             }
         });
        $(window).mouseup( function(){
