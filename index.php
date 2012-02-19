@@ -12,17 +12,16 @@ get_header(); ?>
 
         <?php while (have_posts()) : the_post(); ?>
 
-    <div class="post_container">
-                <div class="post_top"></div>
-                <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-<!--                        <div class="post-date">
+    <div class="<?php echo get_post_type(); ?>_container">
+                <div class="<?php echo get_post_type(); ?>_top"></div>
+                <article <?php post_class() ?> id="<?php echo get_post_type(); ?>-<?php the_ID(); ?>">
+<!--                        <div class="<?php echo get_post_type(); ?>-date">
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to' , 'metaspexet' ) ?> <?php the_title_attribute(); ?>">
                                 <span class="post-month"><?php the_time('M'); ?></span>
                                 <span class="post-day"><?php the_time('j'); ?></span>
                                 <span class="post-year"><?php the_time('Y'); ?></span>
                                 </a>
                         </div>-->
-                        <?php // edit_post_link( __( 'Edit', 'metaspexet' ), '<div class="edit-post-link">', '</div>') ?>
                         <?php if ( has_post_thumbnail() ) {
                                 echo "<div class='post-thumbnail'>";
                                         echo "<a href=\"" . get_permalink() . "\">";
@@ -47,7 +46,7 @@ get_header(); ?>
 
                         </div>
                 </article>
-                <div class="post_bottom"></div>
+                <div class="<?php echo get_post_type(); ?>_bottom"></div>
     </div>
 
                 <?php endwhile; ?>
