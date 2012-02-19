@@ -2,33 +2,37 @@ $(function(){
     $(document).ready( function(){
         $("#content").mousedown( function(e){
             $(this).data("mouseDown", true).data("cursorY", e.pageY);
-       });
-       $(document).mousemove(function(e) {
-           var $this = $("#content");
-            if( $this.data("mouseDown") == true ) {
-                //Sidebar Offset, Top value
-                var s_top = parseInt($this.position().top);
+        });
 
-                var mouseMoved =  $this.data("cursorY") - e.pageY;
+        $(document).mousemove(function(e) {
+           var c = $("#content");
+            if( c.data("mouseDown") == true ) {
+                var mouseMoved = c.data("cursorY") - e.pageY;
+                c.data("cursorY", e.pageY);
 
-                $this.data("cursorY", e.pageY);
-                var top = $this.css("top");
-                top = top.substr(0, top.length-2);
-                var newTop = (Math.round(top) - mouseMoved);
+                var currentTop = c.css("top");
+                currentTop = currentTop.substr(0, currentTop.length-2); // drop "px" suffix
+                var newTop = Math.round(currentTop) - mouseMoved;
 
-//                //Calculate the top value
-//                //This equation is not the perfect, but it 's very close
-                var maxToMove = ($this.height()-$("#main_container").height()+20);
-                newTop = Math.max(newTop, 0-maxToMove);
-                newTop = Math.min(newTop, 0);;
-                $this.css({top: newTop});
+                var maxTop = -10;
+                var minTop = maxTop - (c.height() - $("#main_container").height());
+                
+                if ( newTop < minTop ) {
+                    newTop = minTop;
+                }
+                if ( newTop > maxTop ) {
+                    newTop = maxTop;
+                }
+                c.css({top: newTop});
             }
         });
-       $("iframe").bind( "mouseup mouseleave", function(){
+
+        $("iframe").bind("mouseup mouseleave", function(){
             $("#content").data("mouseDown", false);
-       });
-       $(window).bind( "mouseup mouseleave", function(){
+        });
+
+        $(window).bind("mouseup mouseleave", function(){
             $("#content").data("mouseDown", false);
-       });
+        });
     });
 });
