@@ -14,7 +14,7 @@ $(function(){
                 currentTop = currentTop.substr(0, currentTop.length-2); // drop "px" suffix
                 var newTop = Math.round(currentTop) - mouseMoved;
 
-                var maxTop = -10;
+                var maxTop = 0;
                 var minTop = maxTop - (c.height() - $("#main_container").height());
                 
                 if ( newTop < minTop ) {

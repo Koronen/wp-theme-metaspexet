@@ -366,12 +366,11 @@ h1, h2, h3, h4, h5, h6 {
     height:         1256px;
 }
 #main_container {
-    background:             url("./img/content_bg_dynamic.jpg") 0 0;
     overflow:       hidden;
-    height:         1258px;
     float:          left;
     height:         1256px;
-    width:          485px
+    width:          485px;
+    background:     url("./img/content_bg_dynamic.jpg") repeat 0 0;
 }
 
 #main_right {
@@ -389,30 +388,38 @@ h1, h2, h3, h4, h5, h6 {
     -moz-user-select:       none;
     -webkit-user-select:    none;
     user-select:            none;
-    background:             url("./img/content_bg_dynamic.jpg") 0 0;
-    padding:                10px 0;
 }
+
 .post_container {
     position: relative;
 }
 
-.post {
+.page_container {
+    position: relative;
+}
+
+article.post {
     margin: 0 18px;
     padding: 0 20px;
-    background:             #fff;
+    background: #fff;
 }
+
+article.page {
+    margin: 10px 10px;
+    padding: 20px 20px;
+    background:             url("./img/content_bg_static.jpg") repeat 0 0;
+}
+
 .post_top{
     width:                  464px;
     height:                 47px;
     background:             url("./img/post_top.png") no-repeat 0 0;
-    margin-top:             10px;
     margin-left:            10px;
 }
 .post_bottom{
     width:                  464px;
     height:                 106px;
     background:             url("./img/post_bottom.png") no-repeat 50% 100%;
-    margin-bottom:          10px;
     margin-left:            11px;
     margin-top:             -58px;
 }
