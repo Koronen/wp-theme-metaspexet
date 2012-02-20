@@ -18,7 +18,7 @@
         </div>
     </li>
     <li id="tv_books" class="widget-container widget_text">
-        <a id="facebook" href="https://www.facebook.com/pages/METAspexet/268010303213578" target="_blank"></a>
+        <a id="facebook" href="https://www.facebook.com/metaspexet" target="_blank"></a>
         <div class="textwidget">
             <img src="<?php bloginfo('template_directory'); ?>/img/right_shelves.jpg" alt="Tv och Böcker" title="Tv och Böcker" />
         </div>

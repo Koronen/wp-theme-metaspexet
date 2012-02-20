@@ -65,7 +65,7 @@
             <a href="/" title="<?php bloginfo('name'); ?>" alt="<?php bloginfo('name'); ?>"></a>
         </aside>
         <aside id="sponsor">
-            <a href="http://af.se" title="Samarbetspartner ÅF" alt="Samarbetspartner ÅF" target="_blank"></a>
+            <a href="http://www.afconsult.com/sv/Student/" title="Samarbetspartner ÅF" alt="Samarbetspartner ÅF" target="_blank"></a>
         </aside>
     </header>
 <section id="container" role="main" class="clearfix">

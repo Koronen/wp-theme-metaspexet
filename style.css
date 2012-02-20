@@ -299,8 +299,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main */
 #container {
-    width:          1115px;
+    width:          960px;
     margin:         0 auto;
+    /*border-style:solid;
+    border-width: 1px;
+    border-color:green;*/
 }
 
 /* Header */
@@ -309,6 +312,9 @@ h1, h2, h3, h4, h5, h6 {
     height:         154px;
     margin:         0 auto;
     background:     url("./img/header.jpg") no-repeat;
+    /*border-style:solid;
+    border-width: 1px;
+    border-color:white;*/
 }
 
 #logo {
@@ -336,22 +342,30 @@ h1, h2, h3, h4, h5, h6 {
 #main_left {
     float:          left;
     width:          194px;
+    /*    border-style:solid;
+    border-width: 1px;
+    border-color:yellow;*/
 }
 
 #main_middle {
     float:          left;
     width:          539px;
-    height:         1256px;
-    margin-bottom:  65px;
+    height:         1326px;
+    /*margin-bottom:  65px;*/
+    /*    border-style:solid;
+    border-width: 1px;
+    border-color:blueviolet;*/
 
 }
 #bulletin_top {
     background:     url("./img/content_top.jpg") repeat 0 0;
     height:         33px;
+    width:          539px;
 }
 #bulletin_bottom {
     background:     url("./img/content_bottom.jpg") repeat 0 0;
-    height:         33px;
+    height:         37px;
+    width:          539px;
 }
 #bulletin_left {
     background:     url("./img/content_left.jpg") repeat 0 0;
@@ -361,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #bulletin_right {
     background:     url("./img/content_right.jpg") repeat 0 0;
-    width:          22px;
+    width:          32px;
     float:          left;
     height:         1256px;
 }
@@ -374,8 +388,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main_right {
-    float:          right;
-    width:          369px;
+    float:          left;
+    width:          227px;
 }
 /* Post */
 
@@ -468,43 +482,51 @@ article.page {
 /* Sidebar Left */
 #magazines {
     background:     url("./img/left_menu.jpg") no-repeat 0 0;
-    height:         455px;
-    padding-top:    45px;
+    height:         500px;
 }
 
 #aktuellt {
     width:          165px;
-    height:         50px;
+    height:         58px;
     display:        block;
-    margin:         10px 0 0 13px;
+    position:       relative;
+    margin:         0 12px;
+    top:            50px;
 }
 
 #tack_till {
     width:          165px;
     height:         58px;
     display:        block;
-    margin:         39px 0 0 17px;
+    position:       relative;
+    margin:         0 15px;
+    top:            85px;
 }
 
 #om_oss {
-    width:          165px;
+    width:          148px;
     height:         58px;
     display:        block;
-    margin:         39px 0 0 10px;
+    position:       relative;
+    margin:         0 15px;
+    top:            125px;
 }
 
 #spexet {
-    width:          154px;
+    width:          152px;
     height:         58px;
     display:        block;
-    margin:         64px 0 0 17px;
+    position:       relative;
+    margin:         0 15px;
+    top:            192px;
 }
 
 #latest_news {
     background:     url("./img/left_latest.jpg") no-repeat 0 0;
     width:          194px;
     height:         335px;
-    padding-top:    70px;
+    padding-top:    85px;
+    padding-left:   2px;
 }
 
 #latest_news_list {
@@ -558,7 +580,7 @@ article.page {
 
 /* Footer */
 footer {
-    background:     url("./img/footer_mid.jpg") no-repeat 50% 50%;
+    background:     url("./img/footer_mid.jpg") no-repeat 50%;
     height:         576px;
 }
 
@@ -597,13 +619,9 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 1115px) {
+@media only screen and (min-width: 960px) {
   #container {
-      width: 1245px;
-  }
-
-  #main_left {
-      margin-left: 143px;
+      width: 960px;
   }
 }
 
