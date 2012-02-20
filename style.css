@@ -43,7 +43,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+body { margin: 0; font-size: 16px; line-height: 1.231; }
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
@@ -53,8 +53,8 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #EDAC15; color: #fff; text-shadow: none; }
+::selection { background: #EDAC15; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -373,17 +373,17 @@ h1, h2, h3, h4, h5, h6 {
     float:          left;
     height:         1256px;
 }
-#bulletin_right {
+/*#bulletin_right {
     background:     url("./img/content_right.jpg") repeat 0 0;
-    width:          32px;
+    width:          33px;
     float:          left;
     height:         1256px;
-}
+}*/
 #main_container {
     overflow:       hidden;
     float:          left;
     height:         1256px;
-    width:          485px;
+    width:          517px;
     background:     url("./img/content_bg_dynamic.jpg") repeat 0 0;
 }
 
@@ -393,28 +393,75 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Post */
 
+div.scrollbarpaper-container
+{
+  position: absolute;
+  z-index: 1;
+}
+
+div.scrollbarpaper-track
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 33px;
+  background:     url("./img/content_right.jpg") repeat 0 0;
+}
+
+div.scrollbarpaper-drag
+{
+	position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+div.scrollbarpaper-drag-top
+{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+div.scrollbarpaper-drag-bottom
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#content.scrollbarpaper-visible
+{
+  padding-right: 0px;
+}
+
+
 #content{
-    cursor:                 move;
+/*    cursor:                 move;*/
     top:                    0;
     left:                   0;
     position:               relative;
-    -ms-user-select:        none;
+   /* -ms-user-select:        none;
     -moz-user-select:       none;
     -webkit-user-select:    none;
-    user-select:            none;
+    user-select:            none;*/
 }
 
 .post_container {
     position: relative;
+    width: 467px;
 }
 
 .page_container {
     position: relative;
+    left:   0;
+    width:  484px;
+    background:             url("./img/content_bg_static.jpg") repeat 0 0;
 }
 
 article.post {
-    margin: 0 18px;
-    padding: 0 20px;
+    margin: 0px 0px 0 18px;
+    padding: 0px 20px 0 20px;
     background: #fff;
 }
 
@@ -422,7 +469,6 @@ article.page {
     margin: 0px 0px;
     height: 1256px;
     padding: 0px 20px;
-    background:             url("./img/content_bg_static.jpg") repeat 0 0;
 }
 
 .post_top{
@@ -430,13 +476,16 @@ article.page {
     height:                 47px;
     background:             url("./img/post_top.png") no-repeat 0 0;
     margin-left:            10px;
+    margin-top:             15px;
+    margin-bottom:          -20px;
 }
 .post_bottom{
     width:                  464px;
     height:                 106px;
     background:             url("./img/post_bottom.png") no-repeat 50% 100%;
-    margin-left:            11px;
-    margin-top:             -58px;
+    margin-left:            10px;
+    margin-top:             -78px;
+    margin-bottom:          -10px;
 }
 
 .page_title {
@@ -524,7 +573,7 @@ article.page {
 
 #latest_news {
     background:     url("./img/left_latest.jpg") no-repeat 0 0;
-    width:          194px;
+    width:          188px;
     height:         335px;
     padding-top:    85px;
     padding-left:   2px;
@@ -534,8 +583,7 @@ article.page {
     list-style:     none;
     text-transform: uppercase;
     padding:        0 15px;
-    font-size:      1.4em;
-    text-align:     justify;
+    font-size:      1em;
     line-height:    1em;
 }
 

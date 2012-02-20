@@ -30,6 +30,14 @@
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="<?php bloginfo('template_directory'); ?>/js/plugins.js"></script>
   <script defer src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+  <script defer src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+  <script defer src="<?php bloginfo('template_directory'); ?>/js/jquery.scrollbarpaper.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" defer src="<?php bloginfo('template_directory'); ?>/js/jquery.scrollbarpaper.css" />
+  <script type="text/javascript">
+$(function() {
+  $('#main_container').scrollbarPaper();
+});
+</script>
   <!-- end scripts-->
 
 
@@ -40,6 +48,8 @@
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
+  
+
 
   <?php wp_footer(); ?>
 
