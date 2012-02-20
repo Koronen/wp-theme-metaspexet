@@ -2,7 +2,8 @@
 /* humanstxt.org */
 
 /* TEAM */
-  Kristoffer Emanuelsson, Victor Koronen
+  Code: Kristoffer Emanuelsson, Victor Koronen, Alexander Solsmed
+  Graphics: Alexander Solsmed, Axel Hammarbäck, Sara Edin, Joakim Annebäck, Sandra Liljeqvist, Gustav During, Terese Skoog
   Site: metaspexet.se
   Twitter: @victorkoronen
   Location: Stockholm, Sweden

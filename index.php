@@ -2,7 +2,7 @@
 /**
  * Index page.
  *
- * @package Metaspexet
+ * @package METAspexet
  */
 
 get_header(); ?>

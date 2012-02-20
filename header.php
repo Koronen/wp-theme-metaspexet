@@ -3,7 +3,7 @@
 /**
  * Header Page
  *
- * @package MetaSpexet
+ * @package METAspexet
  */
 
 ?><!doctype html>
