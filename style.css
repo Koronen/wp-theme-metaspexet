@@ -419,8 +419,9 @@ article.post {
 }
 
 article.page {
-    margin: 10px 10px;
-    padding: 20px 20px;
+    margin: 0px 0px;
+    height: 1256px;
+    padding: 0px 20px;
     background:             url("./img/content_bg_static.jpg") repeat 0 0;
 }
 
