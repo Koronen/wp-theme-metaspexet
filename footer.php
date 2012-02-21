@@ -2,7 +2,7 @@
 /**
  * Footer Page
  *
- * @package MetaSpexet
+ * @package METAspexet
  */
 
 ?>
@@ -43,7 +43,7 @@ $(function() {
 
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    window._gaq = [['_setAccount','UA-29384661-1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
