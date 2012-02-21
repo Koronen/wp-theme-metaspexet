@@ -631,7 +631,6 @@ article.page {
 footer {
     background:     url("./img/footer_mid.jpg") no-repeat 50%;
     height:         576px;
-    width:          2282px;
 }
 
 
@@ -669,10 +668,14 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 960px) {
-  #container {
-      width: 960px;
-  }
+@media only screen and (max-width: 1024px) {
+    /* Footer */
+    footer {
+        background:     url("./img/footer_right.jpg") no-repeat;
+        left: 0px;
+        height:         576px;
+        width: 1024px;
+    }
 }
 
 
