@@ -456,7 +456,7 @@ div.scrollbarpaper-drag-bottom
     position: relative;
     left:   0;
     width:  484px;
-    background:             url("./img/content_bg_static.jpg") repeat 0 0;
+    background:             url("./img/content_bg_static.png") repeat 0 0;
 }
 
 article.post {
