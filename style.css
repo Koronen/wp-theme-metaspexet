@@ -245,6 +245,17 @@ td { vertical-align: top; }
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'F25ExecutiveRegular';
+    src: url('./fonts/f25_executive-webfont.eot');
+    src: url('./fonts/f25_executive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/f25_executive-webfont.woff') format('woff'),
+         url('./fonts/f25_executive-webfont.ttf') format('truetype'),
+         url('./fonts/f25_executive-webfont.svg#F25ExecutiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Basic */
 body {
     background:     url("./img/bg_tiled1_long.jpg") repeat-x 50% 0;
@@ -502,7 +513,7 @@ article.page {
 }
 
 .entry p {
-    font-family: OldNewspaperTypes, Georgia;
+    font-family: F25ExecutiveRegular, Georgia;
 }
 
 /* Sidebar */
