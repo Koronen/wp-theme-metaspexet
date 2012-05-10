@@ -11,7 +11,7 @@
             <nav>
                 <ul id="biljetter_ul">
                     <li>
-                        <a id="kop_biljetter" href="#" title="Köp Biljetter"></a>
+                        <a id="kop_biljetter" href="/biljett/" title="Köp Biljetter"></a>
                     </li>
                 </ul>
             </nav>
