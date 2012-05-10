@@ -214,7 +214,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
    Tables
    ========================================================================== */
 
-table { border-collapse: collapse; border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; font-family: F25ExecutiveRegular;}
 td { vertical-align: top; }
 
 
@@ -610,19 +610,19 @@ article.page {
 /* Sidebar Right */
 
 #biljetter {
-    width:          212px;
-    height:         145px;
-    margin-bottom:  30px;
+    width:          323px;
+    height:         180px;
+    margin-bottom:  0px;
     position:       relative;
-    display: none;
+    display: block;
 }
 
 #kop_biljetter {
-    width:          212px;
-    height:         145px;
-/*    background:     url("./img/biljetter.png") no-repeat 0 0;*/
+    width:          323px;
+    height:         180px;
+    background:     url("./img/tickets.png") no-repeat 0 0;
     position:       absolute;
-    left:           -40px;
+    left:           -45px;
     top:            0;
 }
 
@@ -645,6 +645,14 @@ footer {
 }
 
 
+/* Ticket page */
+input {
+    font-family: F25ExecutiveRegular;
+}
+
+option {
+    font-family: F25ExecutiveRegular;
+}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
