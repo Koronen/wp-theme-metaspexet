@@ -40,8 +40,9 @@ $(function() {
 </script>
   <!-- end scripts-->
 
-<!--
+
   <!-- Change UA-XXXXX-X to be your site's ID -->
+<!--
   <script>
     window._gaq = [['_setAccount','UA-29384661-1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({
